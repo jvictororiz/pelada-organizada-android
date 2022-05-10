@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="viewModel"
+            type="br.com.rorizinfo.peladaorganizada.viewmodel.settings.SettingsViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.SettingsActivity">
+
+        <br.com.rorizinfo.peladaorganizada.ui.component.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:enableBackButton="false"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/toolbar_settings" />
+
+        <br.com.rorizinfo.peladaorganizada.ui.component.ChoseGameView
+            android:id="@+id/choseGame"
+            app:positionSelected="@={viewModel.screenLiveData.currentGame}"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <br.com.rorizinfo.peladaorganizada.ui.component.CountDownUpView
+            android:id="@+id/countView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            app:label="@string/count_players"
+            app:layout_constraintTop_toBottomOf="@+id/choseGame"
+            app:maxValue="15"
+            app:value="@={viewModel.screenLiveData.totalPlayers}" />
+
+        <br.com.rorizinfo.peladaorganizada.ui.component.MultipleInputView
+            android:id="@+id/inputView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:hint="@string/example_input"
+            android:layout_marginTop="16dp"
+            android:text="@{viewModel.screenLiveData.textPlayers}"
+            app:labelLeft="@string/total_players"
+            app:enableCount="true"
+            app:layout_constraintTop_toBottomOf="@+id/countView"
+            app:names="@={viewModel.screenLiveData.players}" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchTie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:checked="@={viewModel.screenLiveData.checkedTie}"
+            android:gravity="end|center"
+            android:text="@string/switch_tie"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/inputView"
+            app:switchPadding="@dimen/default_margin"
+            android:theme="@style/SwitchStyle"
+            app:thumbTint="@color/primaryColor" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:enabled="true"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:background="@drawable/selector_corners_primary_light"
+            app:enabled="@={viewModel.screenLiveData.enableButtonNext}"
+            android:text="@string/iniciar_sorteio"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

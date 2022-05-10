@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:weightSum="9">
+
+
+    <br.com.rorizinfo.peladaorganizada.ui.component.TeamView
+        android:id="@+id/teamOne"
+        android:layout_width="0dp"
+        app:title="@string/team_one"
+        tools:layout_height="200dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/vs"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <br.com.rorizinfo.peladaorganizada.ui.component.TeamView
+        android:id="@+id/teamTwo"
+        android:layout_width="0dp"
+        tools:layout_height="200dp"
+        app:title="@string/team_two"
+        android:layout_height="wrap_content"
+        android:layout_weight="4" />
+
+</LinearLayout>

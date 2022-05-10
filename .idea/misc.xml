@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/drawable/ic_back.xml" value="0.196" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/drawable/ic_close.xml" value="0.2855" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/drawable/ic_history.xml" value="0.2855" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/drawable/selector_corners_primary_light.xml" value="0.2985" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/drawable/selector_radio_group_corners_primary_light.xml" value="0.2985" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/drawable/selector_shape_prmary.xml" value="0.2985" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/drawable/shape_bottom_sheet.xml" value="0.2855" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/drawable/shape_corners_primary.xml" value="0.2985" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/drawable/shape_corners_primary_light.xml" value="0.2985" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/drawable/shape_corners_primary_light_disable.xml" value="0.2985" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/drawable/shape_corners_white.xml" value="0.2985" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/drawable/shape_primary_round.xml" value="0.1435" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/drawable/shape_switch.xml" value="0.2985" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/activity_game.xml" value="0.25" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/activity_history.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/activity_settings.xml" value="0.2" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/bottom_sheet_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/bottom_sheet_new_players.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/bottom_sheet_payments.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/chose_game_view.xml" value="0.5" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/count_down_up_view.xml" value="0.33" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/item_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/item_menu_sheet.xml" value="0.25" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/item_player.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/item_player_pay.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/item_round.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/item_team.xml" value="0.1213768115942029" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/item_team_list.xml" value="0.33" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/layout_toolbar.xml" value="0.22" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/multiple_input_view.xml" value="0.25" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/round_view.xml" value="0.25" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/team_round_view.xml" value="0.1213768115942029" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/team_view.xml" value="0.25" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/layout/tie_view.xml" value="0.33" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/Peladaorganizada/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2855" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

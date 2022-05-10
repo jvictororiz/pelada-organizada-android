@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="br.com.rorizinfo.peladaorganizada.viewmodel.game.GameViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ui.activity.GameActivity">
+
+            <br.com.rorizinfo.peladaorganizada.ui.component.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconRight="@drawable/ic_history"
+                app:enableIconRight="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="@string/my_game" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLabelNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                android:layout_marginTop="@dimen/default_margin"
+                android:text="@string/game_now"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+            <br.com.rorizinfo.peladaorganizada.ui.component.TieView
+                android:id="@+id/tieView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:visibility="@{viewModel.screenLiveData.checkedTie}"
+                android:paddingHorizontal="10dp"
+                android:text="@string/tie"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelNow" />
+
+            <br.com.rorizinfo.peladaorganizada.ui.component.RoundView
+                android:id="@+id/roundView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/cardview_default_radius"
+                android:layout_marginTop="@dimen/small_margin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tieView"
+                app:teamOne="@{viewModel.screenLiveData.game.currentRound.teamOne}"
+                app:teamTwo="@{viewModel.screenLiveData.game.currentRound.teamTwo}" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/roundView" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_label_nexts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="@dimen/small_margin"
+                android:text="@string/next_games"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_nexts"
+                tools:itemCount="3"
+                tools:listitem="@layout/team_view" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNewPlayers"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:text="@string/new_player"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/default_margin"
+                app:layout_constraintVertical_bias="1"
+                android:layout_marginBottom="@dimen/default_margin"
+                app:layout_constraintBottom_toTopOf="@+id/btnPayment"
+                app:layout_constraintTop_toBottomOf="@+id/rvTeam"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/selector_corners_primary_light"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPayment"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:textColor="@color/primaryColor"
+                android:text="@string/manager_payment"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/default_margin"
+                app:layout_constraintVertical_bias="1"
+                android:layout_marginBottom="@dimen/default_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvTeam"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                android:layout_height="wrap_content"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

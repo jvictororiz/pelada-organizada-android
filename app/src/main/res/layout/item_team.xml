@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.rorizinfo.peladaorganizada.ui.component.TeamView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/teamView"
+    android:layout_width="180dp"
+    android:alpha="0.7"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true" />

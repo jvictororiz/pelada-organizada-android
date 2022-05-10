@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="entitie"
+            type="br.com.rorizinfo.peladaorganizada.ui.bottomSheet.model.AdNewPlayerModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_bottom_sheet"
+        android:paddingVertical="@dimen/default_margin"
+        android:layout_height="wrap_content">
+
+        <br.com.rorizinfo.peladaorganizada.ui.component.MultipleInputView
+            android:id="@+id/inputView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_marginTop="16dp"
+            android:hint="@string/example_input"
+            app:labelLeft="@string/total_players"
+            app:layout_constraintTop_toTopOf="parent"
+            app:names="@={entitie.players}" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:background="@drawable/selector_corners_primary_light"
+            android:enabled="true"
+            android:text="@string/add_new_players"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
